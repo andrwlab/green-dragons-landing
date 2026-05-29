@@ -34,6 +34,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
@@ -41,6 +43,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
+  overflow-x: clip;
   background:
     radial-gradient(circle at top left, rgba(191, 153, 74, 0.18), transparent 22rem),
     radial-gradient(circle at 85% 0%, rgba(11, 61, 41, 0.55), transparent 32rem),
@@ -107,6 +110,8 @@ button {
 main {
   position: relative;
   isolation: isolate;
+  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 main::before,
@@ -993,7 +998,13 @@ button:focus-visible {
 
 @media (max-width: 760px) {
   :root {
-    --content-width: min(100% - 1rem, 100%);
+    --content-width: calc(100% - 1rem);
+  }
+
+  main::after {
+    right: -4rem;
+    width: 18rem;
+    height: 18rem;
   }
 
   .site-header {
