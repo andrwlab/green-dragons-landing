@@ -1,0 +1,65 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#03170F"/>
+  <rect width="1200" height="630" fill="url(#paint0_linear)"/>
+  <circle cx="934" cy="176" r="186" fill="#0B3D29" fill-opacity="0.34"/>
+  <circle cx="996" cy="490" r="164" stroke="#BF994A" stroke-opacity="0.18" stroke-width="2"/>
+  <path d="M104 122H474" stroke="#E8D38A" stroke-opacity="0.7" stroke-width="4" stroke-linecap="round"/>
+  <path d="M104 514H1096" stroke="#E8D38A" stroke-opacity="0.12" stroke-width="2"/>
+  <g opacity="0.16">
+    <path d="M726 112H1116V502H726V112Z" stroke="#E8D38A" stroke-width="2"/>
+    <path d="M823 112V502" stroke="#E8D38A" stroke-width="2"/>
+    <path d="M920 112V502" stroke="#E8D38A" stroke-width="2"/>
+    <path d="M1018 112V502" stroke="#E8D38A" stroke-width="2"/>
+    <path d="M726 210H1116" stroke="#E8D38A" stroke-width="2"/>
+    <path d="M726 307H1116" stroke="#E8D38A" stroke-width="2"/>
+    <path d="M726 405H1116" stroke="#E8D38A" stroke-width="2"/>
+  </g>
+  <g>
+    <path
+      d="M915 106L1000 138V218C1000 277 962.5 327 915 350C867.5 327 830 277 830 218V138L915 106Z"
+      fill="#052A19"
+      stroke="#E8D38A"
+      stroke-width="8"
+    />
+    <circle cx="915" cy="208" r="66" fill="#0B3D29" stroke="#BF994A" stroke-width="5"/>
+    <path d="M870 194C888 176 942 176 960 194" stroke="#E8D38A" stroke-width="4" stroke-linecap="round"/>
+    <path d="M868 216C889 232 941 232 962 216" stroke="#E8D38A" stroke-width="4" stroke-linecap="round"/>
+    <path d="M885 158C900 180 900 236 885 258" stroke="#E8D38A" stroke-width="4" stroke-linecap="round"/>
+    <path d="M945 158C930 180 930 236 945 258" stroke="#E8D38A" stroke-width="4" stroke-linecap="round"/>
+    <path d="M915 142V274" stroke="#E8D38A" stroke-width="4" stroke-linecap="round"/>
+    <text
+      x="915"
+      y="318"
+      text-anchor="middle"
+      fill="#F7F7F2"
+      font-family="'Arial Narrow', Arial, sans-serif"
+      font-size="28"
+      font-weight="700"
+      letter-spacing="6"
+    >
+      GDS
+    </text>
+  </g>
+  <text x="104" y="174" fill="#E8D38A" font-family="'Arial Narrow', Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="6">
+    TORNEO INTERCOLEGIAL DE VOLEIBOL
+  </text>
+  <text x="104" y="286" fill="#F7F7F2" font-family="'Arial Narrow', Arial, sans-serif" font-size="84" font-weight="800" letter-spacing="2">
+    GREEN DRAGONS
+  </text>
+  <text x="104" y="364" fill="#F7F7F2" font-family="'Arial Narrow', Arial, sans-serif" font-size="84" font-weight="800" letter-spacing="2">
+    SPORTS
+  </text>
+  <text x="104" y="432" fill="#F7F7F2" fill-opacity="0.92" font-family="Arial, sans-serif" font-size="34" font-weight="700">
+    Mixto · 7.º a 12.º grado
+  </text>
+  <text x="104" y="484" fill="#AAB0A9" font-family="Arial, sans-serif" font-size="28">
+    Experiencia deportiva organizada, competitiva y memorable para colegios.
+  </text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#03170F"/>
+      <stop offset="0.48" stop-color="#052A19"/>
+      <stop offset="1" stop-color="#050807"/>
+    </linearGradient>
+  </defs>
+</svg>
