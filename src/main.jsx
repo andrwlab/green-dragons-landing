@@ -8,6 +8,7 @@ const WHATSAPP_MESSAGE = encodeURIComponent(
 
 // TODO: Replace WHATSAPP_URL with the real WhatsApp link.
 const WHATSAPP_URL = '#';
+const LOGO_ASSET = `${import.meta.env.BASE_URL}official-logo.png`;
 
 const navLinks = [
   { label: 'Torneo', href: '#torneo' },
@@ -308,12 +309,12 @@ function App() {
         <div className="nav-shell">
           <nav className="nav" aria-label="Navegación principal">
             <a className="brand" href="#inicio" onClick={closeMenu} aria-label="Ir al inicio de Green Dragons Sports">
-              <img
-                className="brand-mark"
-                src={`${import.meta.env.BASE_URL}crest-mark.svg`}
-                alt="Escudo de Green Dragons Sports"
-                width="72"
-                height="72"
+                <img
+                  className="brand-mark"
+                  src={LOGO_ASSET}
+                  alt="Escudo de Green Dragons Sports"
+                  width="72"
+                  height="72"
               />
               <span className="brand-copy">
                 <strong>Green Dragons Sports</strong>
@@ -386,7 +387,7 @@ function App() {
             <aside className="hero-card" aria-label="Resumen del torneo">
               <img
                 className="hero-watermark"
-                src={`${import.meta.env.BASE_URL}crest-mark.svg`}
+                src={LOGO_ASSET}
                 alt=""
                 width="220"
                 height="220"
@@ -396,7 +397,7 @@ function App() {
               <div className="hero-card-header">
                 <img
                   className="hero-card-mark"
-                  src={`${import.meta.env.BASE_URL}crest-mark.svg`}
+                  src={LOGO_ASSET}
                   alt=""
                   width="84"
                   height="84"
@@ -689,7 +690,7 @@ function App() {
           <div className="footer-brand">
             <img
               className="footer-mark"
-              src={`${import.meta.env.BASE_URL}crest-mark.svg`}
+              src={LOGO_ASSET}
               alt="Escudo de Green Dragons Sports"
               width="72"
               height="72"
