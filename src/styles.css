@@ -1332,6 +1332,13 @@ section[id] {
   padding: clamp(1.8rem, 3.8vw, 2.45rem);
 }
 
+.format-summary h2 {
+  max-width: 8.2ch;
+  font-size: clamp(2.15rem, 4.35vw, 3.85rem);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 .format-steps {
   display: grid;
   gap: 1rem;
