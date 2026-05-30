@@ -465,6 +465,7 @@ section[id] {
 }
 
 .hero-grid,
+.editorial-layout,
 .platform-layout,
 .format-layout,
 .awards-layout,
@@ -630,6 +631,8 @@ section[id] {
 .value-card,
 .bento-card,
 .dashboard-card,
+.poster-card,
+.editorial-card,
 .format-summary,
 .format-step,
 .award-card,
@@ -649,6 +652,8 @@ section[id] {
 .value-card::before,
 .bento-card::before,
 .dashboard-card::before,
+.poster-card::before,
+.editorial-card::before,
 .format-summary::before,
 .format-step::before,
 .award-card::before,
@@ -909,6 +914,176 @@ section[id] {
   grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
   gap: clamp(2rem, 6vw, 4rem);
   align-items: start;
+}
+
+.editorial-layout {
+  grid-template-columns: minmax(0, 0.68fr) minmax(0, 1.32fr);
+  gap: clamp(2rem, 5vw, 3.8rem);
+  align-items: start;
+}
+
+.editorial-copy {
+  max-width: 33rem;
+  align-self: start;
+}
+
+.editorial-showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(18rem, 0.95fr);
+  gap: 1.15rem;
+  align-items: start;
+}
+
+.poster-card {
+  display: grid;
+  align-content: space-between;
+  min-height: 31rem;
+  padding: clamp(1.65rem, 3.5vw, 2.3rem);
+  isolation: isolate;
+  background:
+    radial-gradient(circle at top right, rgba(232, 211, 138, 0.15), transparent 14rem),
+    linear-gradient(160deg, rgba(191, 153, 74, 0.12) 0%, rgba(191, 153, 74, 0.02) 28%, transparent 28%),
+    linear-gradient(180deg, rgba(15, 49, 33, 0.98), rgba(4, 11, 8, 0.96)),
+    var(--color-panel);
+}
+
+.poster-card::before {
+  background:
+    linear-gradient(90deg, rgba(232, 211, 138, 0.55), transparent),
+    radial-gradient(rgba(255, 255, 255, 0.05) 0.9px, transparent 0.9px);
+  background-size: 100% 1px, 10px 10px;
+  background-repeat: no-repeat, repeat;
+  height: 100%;
+  opacity: 0.38;
+}
+
+.poster-card::after {
+  position: absolute;
+  right: -1.8rem;
+  bottom: 3.2rem;
+  color: rgba(255, 255, 255, 0.04);
+  font-family: var(--font-display);
+  font-size: clamp(7rem, 18vw, 11rem);
+  line-height: 0.78;
+  text-transform: uppercase;
+  content: "GDS";
+  pointer-events: none;
+}
+
+.poster-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.poster-mark {
+  width: 5.25rem;
+  height: 5.25rem;
+  margin-bottom: 1.2rem;
+}
+
+.poster-kicker {
+  color: var(--color-gold-soft);
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.poster-title {
+  max-width: 8ch;
+  margin: 0.25rem 0 0.4rem;
+  font-size: clamp(3rem, 5vw, 4.8rem);
+  line-height: 0.82;
+}
+
+.poster-subtitle {
+  max-width: 18rem;
+  color: var(--color-white);
+  font-family: var(--font-display);
+  font-size: 1.28rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.poster-band {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.72rem;
+  margin-top: 1.35rem;
+}
+
+.poster-band span,
+.poster-footer span {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+}
+
+.poster-band span {
+  padding: 0.68rem 0.95rem;
+  border: 1px solid rgba(232, 211, 138, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--color-white);
+  font-size: 0.98rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.poster-footer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(232, 211, 138, 0.14);
+}
+
+.poster-footer span {
+  display: block;
+  color: var(--color-gold-soft);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.editorial-stack {
+  display: grid;
+  gap: 1rem;
+  padding-top: 0.2rem;
+}
+
+.editorial-card {
+  display: grid;
+  align-content: start;
+  gap: 0.9rem;
+  min-height: 9.4rem;
+  padding: 1.45rem;
+}
+
+.editorial-card:nth-child(2) {
+  margin-left: clamp(1rem, 2vw, 2rem);
+}
+
+.editorial-card:nth-child(3) {
+  margin-right: clamp(0.8rem, 1.7vw, 1.6rem);
+}
+
+.editorial-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.editorial-card-top > span:last-child {
+  color: var(--color-gold-soft);
+  font-family: var(--font-display);
+  font-size: 0.96rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .value-copy {
@@ -1317,6 +1492,7 @@ section[id] {
 }
 
 @media (min-width: 1081px) {
+  .editorial-copy,
   .value-copy,
   .platform-copy,
   .format-summary,
@@ -1398,6 +1574,7 @@ button:focus-visible {
 
 @media (max-width: 1080px) {
   .hero-grid,
+  .editorial-layout,
   .value-layout,
   .platform-layout,
   .format-layout,
@@ -1412,7 +1589,13 @@ button:focus-visible {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .editorial-showcase {
+    grid-template-columns: 1fr;
+  }
+
   .hero-card,
+  .editorial-card:nth-child(2),
+  .editorial-card:nth-child(3),
   .value-card:nth-child(2),
   .value-card:nth-child(3),
   .format-step:nth-child(even),
@@ -1523,6 +1706,10 @@ button:focus-visible {
     padding-left: 0.95rem;
   }
 
+  .poster-card {
+    min-height: auto;
+  }
+
   h1 {
     font-size: clamp(3.4rem, 14.5vw, 4.9rem);
   }
@@ -1534,6 +1721,7 @@ button:focus-visible {
   .hero-facts,
   .hero-ledger,
   .bento-grid,
+  .poster-footer,
   .dashboard-grid,
   .awards-grid,
   .sponsor-grid,

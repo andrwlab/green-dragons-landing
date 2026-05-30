@@ -35,6 +35,29 @@ const heroLedger = [
   { label: 'Cierre', value: 'Premiación institucional' },
 ];
 
+const posterSignals = ['Calendario visible', 'Resultados digitales', 'Premiación oficial'];
+
+const editorialNotes = [
+  {
+    tag: 'Jornada 01',
+    title: 'Calendario y cruces con lectura inmediata',
+    copy: 'Horarios, grupos y orden de juego presentados como información oficial, no como mensaje improvisado.',
+    icon: 'calendar',
+  },
+  {
+    tag: 'Cobertura',
+    title: 'Lenguaje visual consistente en toda la experiencia',
+    copy: 'Landing, piezas, tabla, reconocimientos y comunicación con una misma voz institucional y deportiva.',
+    icon: 'platform',
+  },
+  {
+    tag: 'Cierre',
+    title: 'Premiación que se siente parte del campeonato',
+    copy: 'Reconocimientos, menciones y cierre visual tratados como un momento central del torneo.',
+    icon: 'award',
+  },
+];
+
 const valueCards = [
   {
     title: 'Representación escolar con peso institucional',
@@ -489,6 +512,55 @@ Teléfono:
                 de cada edición.
               </p>
             </aside>
+          </div>
+        </section>
+
+        <section className="section editorial" aria-labelledby="editorial-title">
+          <div className="editorial-layout">
+            <div className="editorial-copy copy-rail">
+              <p className="eyebrow">Puesta en escena</p>
+              <h2 id="editorial-title">La identidad también tiene que verse como campeonato, no como flyer escolar.</h2>
+              <p>
+                Una capa editorial fuerte ayuda a que colegios, familias y patrocinadores perciban organización,
+                criterio visual y nivel competitivo desde el primer vistazo.
+              </p>
+            </div>
+
+            <div className="editorial-showcase">
+              <article className="poster-card" aria-label="Poster oficial del torneo">
+                <img className="poster-mark" src={LOGO_ASSET} alt="" width="96" height="96" aria-hidden="true" />
+                <p className="poster-kicker">Green Dragons Sports</p>
+                <h3 className="poster-title">Torneo intercolegial de voleibol</h3>
+                <p className="poster-subtitle">Mixto · 7.º a 12.º grado</p>
+
+                <div className="poster-band" aria-label="Elementos del torneo">
+                  {posterSignals.map((item) => (
+                    <span key={item}>{item}</span>
+                  ))}
+                </div>
+
+                <div className="poster-footer">
+                  <span>Resultados</span>
+                  <span>Tabla</span>
+                  <span>Premiación</span>
+                </div>
+              </article>
+
+              <div className="editorial-stack">
+                {editorialNotes.map((item) => (
+                  <article className="editorial-card" key={item.title}>
+                    <div className="editorial-card-top">
+                      <span className="icon-chip">
+                        <LineIcon type={item.icon} />
+                      </span>
+                      <span>{item.tag}</span>
+                    </div>
+                    <h3>{item.title}</h3>
+                    <p>{item.copy}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
 
